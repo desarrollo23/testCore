@@ -14,6 +14,14 @@ namespace WebApplication1.Controllers
             return new string[] { "value1", "value2" };
         }
 
+        // GET api/hello
+        [HttpGet]
+        [Route("hello")]
+        public ActionResult<string> Hello()
+        {
+            return "Hello world";
+        }
+
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
